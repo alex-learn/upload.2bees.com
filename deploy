@@ -1,0 +1,7 @@
+SITE=sites
+[ ! -z $1 ] && SITE=$1
+
+while read site; do
+  echo $site
+  [ -f enabled ] && meteor deploy $site
+done <share/$SITE

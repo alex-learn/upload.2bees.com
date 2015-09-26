@@ -1,0 +1,4 @@
+tmp
+log
+enabled
+packages/npm-container/.build*
